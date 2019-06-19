@@ -249,12 +249,12 @@ public class InfoRecette extends AppCompatActivity implements WsListener, OnMapR
                         String ajoutFav = "," + idRecette;
                         nouveauxFavs += ajoutFav;
                         coeurFav.setIcon(R.drawable.like);
-                        Toast.makeText(mContext, "La recette a bien été ajoutée aux favoris", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "La recette a été ajoutée aux favoris", Toast.LENGTH_SHORT).show();
                     }
                     // Si l'id Recette est dans les favs
                     else {
                         coeurFav.setIcon(R.drawable.likeoff);
-                        Toast.makeText(mContext, "La recette a bien été retirée des favoris", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, "La recette a été retirée des favoris", Toast.LENGTH_SHORT).show();
                     }
                     preferences.edit().putString("favoris", nouveauxFavs).apply();
             return true;
