@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_bg"
+        android:id="@+id/recettesPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutNoteRecettes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/recetteNote0"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/start_off"/>
+        <ImageView
+            android:id="@+id/recetteNote1"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/start_off"/>
+        <ImageView
+            android:id="@+id/recetteNote2"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/start_off" />
+        <ImageView
+            android:id="@+id/recetteNote3"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/start_off" />
+        <ImageView
+            android:id="@+id/recetteNote4"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/start_off" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutFavRecettes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/coeurFavListe"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/likeoff"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/recettesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_above="@id/layoutNoteRecettes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/blanc"
+        android:textStyle="bold"
+        tools:text="Nom Recette"></TextView>
+
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:id="@+id/recettePhoto"
+        android:background="@drawable/img_bg">
+        <LinearLayout
+            android:id="@+id/layoutNoteRecettes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/recetteInfoNote0"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/start_off"/>
+            <ImageView
+                android:id="@+id/recetteInfoNote1"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/start_off"/>
+            <ImageView
+                android:id="@+id/recetteInfoNote2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/start_off" />
+            <ImageView
+                android:id="@+id/recetteInfoNote3"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/start_off" />
+            <ImageView
+                android:id="@+id/recetteInfoNote4"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/start_off" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutFavRecettes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/likeoff"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/nomRecette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_above="@id/layoutNoteRecettes"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/blanc"
+            android:textStyle="bold"
+            tools:text="Nom Recette"></TextView>
+    </RelativeLayout>
+
+
+
+    <!-- ############# -->
+    <!-- INFOS RECETTE -->
+    <!-- ############# -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recetteInfosRapides"
+        android:background="@color/grisClair"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+            <ImageView
+                android:id="@+id/preparationImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/preparation"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/infosPrepa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/preparationImg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Préparation"
+                    android:id="@+id/preparationTxt" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preparationValeur"
+                    android:text="15 min"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+            <ImageView
+                android:id="@+id/cookTimeImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/cooking"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/infosCook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cookTimeImg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cook Time"
+                    android:id="@+id/cookTxt" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cooktimeValeur"
+                    android:text="40 min"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10">
+            <ImageView
+                android:id="@+id/caloriesImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/calories"
+                android:layout_centerVertical="true"/>
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/infosCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/caloriesImg"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calories"
+                    android:id="@+id/caloriesTxt" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/caloriesValeur"
+                    android:text="298 kcal"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!-- ######################### -->
+    <!-- INGREDIENTS, INSTRUCTIONS -->
+    <!-- ######################### -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRÉDIENTS"
+            android:textStyle="bold"/>
+        <TextView
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ingredientsValeur"
+            android:text="Ingrédients"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="INSTRUCTIONS"
+            android:textStyle="bold"/>
+        <TextView
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/instructionsValeur"
+            android:text="Instructions"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:text="À DÉGUSTER DANS CES RESTAURANTS"
+            android:textStyle="bold"/>
+
+        <fragment
+            android:layout_marginTop="10dp"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            tools:context="com.cossu.myapplication.activitys.InfoRecette" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

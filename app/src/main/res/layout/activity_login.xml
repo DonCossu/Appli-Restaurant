@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/img_bg">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_splash_logo"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonInscription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="CRÉER UN COMPTE"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/blanc"
+            android:background="@color/buttonInscription"/>
+
+        <Button
+            android:id="@+id/buttonConnexion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="CONNEXION"
+            android:layout_above="@+id/buttonInscription"
+            android:textColor="@color/blanc"
+            android:background="@color/buttonConnexion"/>
+
+        <EditText
+            android:id="@+id/loginMdp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_above="@+id/buttonConnexion"
+            android:background="@drawable/login_edit_text"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"/>
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/login_edit_text"
+            android:layout_above="@id/loginMdp"
+            android:hint="Email"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/img_bg">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonValidationInscription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="CRÉER UN COMPTE"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/blanc"
+            android:background="@color/buttonInscription"/>
+
+        <EditText
+            android:id="@+id/InscriptionMdp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:layout_above="@+id/buttonValidationInscription"
+            android:background="@drawable/login_edit_text"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"/>
+
+        <EditText
+            android:id="@+id/InscriptionEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/login_edit_text"
+            android:layout_above="@id/InscriptionMdp"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/InscriptionNom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/login_edit_text"
+            android:layout_above="@id/InscriptionEmail"
+            android:hint="Nom"/>
+
+        <EditText
+            android:id="@+id/InscriptionPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/login_edit_text"
+            android:layout_above="@id/InscriptionNom"
+            android:hint="Prénom"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

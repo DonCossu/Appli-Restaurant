@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/actionBar"
+    app:layout_constraintCircleRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/mapRestauPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mapRestauTitre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="NOM RESTAU"
+                android:textColor="@color/blanc"/>
+
+
+            <TextView
+                android:id="@+id/mapRestauAdresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADRESSE"
+                android:textColor="@color/blanc"
+                android:singleLine="false" />
+
+
+            <TextView
+                android:id="@+id/mapRestauTelephone"
+                android:text="PHONE"
+                android:textColor="@color/blanc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
